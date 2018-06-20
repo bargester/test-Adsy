@@ -1,4 +1,32 @@
 footer.footer-s
-    .footer-s__form.container
-    .footer-s__contact
+    .footer-s__title.container
+        span.icon-chat
+        p.title Contact Us
+        h1 Say #[span Hello !]
+        .footer-s__main
+            form.form(method="post" action="#")
+                .form__block
+                    input.form__name.form__item(type="text" required="required" placeholder="Your Name")
+                    input.form__mail.form__item(type="email" required="required" placeholder="Email")
+                input.form__subject.form__item(type="text" required="required" placeholder="Subject")
+                textarea.form__text.form__item(required="required" placeholder="Your Message")
+                input.form__submit(type="submit" value="Send Message")
+            .map
+                p This will be replaced with the Google Map.
+    .footer-s__contact.container--medium
+        .contact__block.line
+            span.icon-phone
+            h3 Have a question?
+            a.contact__text(href="tel +11234567890") +1 1234567890
+        .contact__block.line
+            span.icon-clock
+            h3 Open Mon - Fri
+            p.contact__text 8:00am to 8:00pm
+        .contact__block
+            span.icon-chat
+            h3 Drop us an Email
+            a.contact__text(href="mailto: help@yourdomail.com") help@yourdomail.com
     .footer-s__services
+        .container
+            h2 Try our #[span services] right now
+            p The most appealing part of the theme it`s very clear and light. And it reavels invidual.
